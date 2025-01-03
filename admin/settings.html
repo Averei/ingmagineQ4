@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/settings.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../user/dashboard.html">AI Social Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../user/dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../admin/scoring.html">Score</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="admin/settings.html">Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Settings</h1>
+        <p>Manage your profile and AI content settings.</p>
+        <form id="settingsForm">
+            <label for="industry" class="form-label">Industry:</label>
+            <input type="text" id="industry" class="form-control mb-3">
+            
+            <label for="products" class="form-label">Products:</label>
+            <textarea id="products" class="form-control mb-3" rows="2"></textarea>
+            
+            <label for="historicalPosts" class="form-label">Historical Posts:</label>
+            <textarea id="historicalPosts" class="form-control mb-3" rows="4"></textarea>
+            
+            <label for="contentPreferences" class="form-label">Content Preferences:</label>
+            <textarea id="contentPreferences" class="form-control mb-3" rows="4"></textarea>
+            
+            <label for="postFrequency" class="form-label">Post Frequency:</label>
+            <input type="text" id="postFrequency" class="form-control mb-3">
+            
+            <label for="recentTrends" class="form-label">Recent Trends:</label>
+            <textarea id="recentTrends" class="form-control mb-3" rows="2"></textarea>
+            
+            <button type="button" class="btn btn-success" onclick="saveSettings()">Save Settings</button>
+        </form>
+
+        <div class="mt-5">
+            <h2>AI Agent Preview</h2>
+            <div id="aiAgentPreview" class="bg-light p-4 rounded shadow-sm">
+                <!-- AI Agent preview content dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

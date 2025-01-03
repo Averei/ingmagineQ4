@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #4a90e2;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar .nav-link:hover {
+    background-color: #357ab7;
+    border-radius: 5px;
+}
+
+.navbar .nav-link.active {
+    background-color: #285a8d;
+    border-radius: 5px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px; /* Increased width for dashboard content */
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Page Header */
+h1, h2 {
+    color: #333;
+}
+
+/* Carousel Section */
+#productCarousel {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#productCarousel .carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-caption {
+    padding: 10px; /* Removed top/bottom padding for consistent alignment */
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Social Feed Section */
+#contentFeed {
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.card-header img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card .fa-thumbs-up,
+.card .fa-comment {
+    color: #555;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.card .fa-thumbs-up:hover,
+.card .fa-comment:hover {
+    color: #4caf50;
+}
+
+/* Add Post Section */
+#postInput {
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+#postButton {
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#postButton:hover {
+    background-color: #45a049;
+}
+
+/* Adjust Layout */
+.row > .col-lg-8,
+.row > .col-lg-4 {
+    padding: 10px;
+}
+
+.card.post-card {
+    width: calc(100% + 30%);
+    margin-left: -15%;
+    margin-right: -15%;
+}

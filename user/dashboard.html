@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tanya Spring Clothes LTD</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Dashboard Styles -->
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dashboard.html">AI Social Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../admin/scoring.html">Scoring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../admin/settings.html">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="container mt-4">
+        <h1>Welcome, Tanya Spring Clothes LTD</h1>
+        <div class="row">
+            <!-- Social Feed Section -->
+            <div class="col-lg-8">
+                <h2>Recent Posts</h2>
+                <div id="postsContainer"></div>
+
+                <!-- Add Post Section -->
+                <div class="mt-4">
+                    <h2>Create a New Post</h2>
+                    <textarea id="postInput" class="form-control mb-3" rows="3" placeholder="What's on your mind?"></textarea>
+                    <input type="file" class="form-control mb-3" id="postImageUpload">
+                    <button id="postButton" class="btn btn-success">Post</button>
+                </div>
+            </div>
+
+            <!-- Product Carousel Section -->
+            <div class="col-lg-4">
+                <h2>Our Products</h2>
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carouselItems">
+                        <!-- Carousel items dynamically inserted here -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Dashboard JS -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
